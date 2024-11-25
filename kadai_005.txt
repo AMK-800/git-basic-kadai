@@ -1,0 +1,136 @@
+PS C:\Users\surug> cd
+PS C:\Users\surug> cd C:\programing
+PS C:\programing> mkdir git_challenge
+
+
+    ディレクトリ: C:\programing
+
+
+Mode                 LastWriteTime         Length Name
+
+PS C:\programing> cd git_challenge
+PS C:\programing\git_challenge> ni hello_world
+
+
+    ディレクトリ: C:\programing\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/11/18     20:13              0 hello_world
+
+
+PS C:\programing\git_challenge> del hello_world
+PS C:\programing\git_challenge> ni hello_world.txt
+
+
+    ディレクトリ: C:\programing\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/11/18     20:15              0 hello_world.txt
+
+
+PS C:\programing\git_challenge> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\programing\git_challenge> echo Hello, world >> hello_world.txt
+PS C:\programing\git_challenge> git add hello_world.txt
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\programing\git_challenge> git commit -m "Hello, world to hello_world.txt"
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\programing\git_challenge> echo こんにちは、世界！ >> hello_world.txt
+PS C:\programing\git_challenge> git add hello_world.txt
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\programing\git_challenge> git commit -m "こんにちは、世界！ to hello_world.txt"
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\programing\git_challenge> git log -- hello_world.txt
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\programing\git_challenge> git init
+Initialized empty Git repository in C:/programing/git_challenge/.git/
+PS C:\programing\git_challenge> git add hello_world.txt
+PS C:\programing\git_challenge> echo Hello, world >> hello_world.txt
+PS C:\programing\git_challenge> git commit -m "Hello, world to hello_world.txt"
+[main (root-commit) d851099] Hello, world to hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\programing\git_challenge> del hello_world.txt
+PS C:\programing\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\programing\git_challenge> ni hello_world.txt
+
+
+    ディレクトリ: C:\programing\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/11/18     21:12              0 hello_world.txt
+
+
+PS C:\programing\git_challenge> git add hello_world.txt
+PS C:\programing\git_challenge> git commit -m "Hello, world to hello_world.txt"
+[main a466d5c] Hello, world to hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\programing\git_challenge> echo こんにちは、世界！ >> hello_world.txt
+PS C:\programing\git_challenge> git add hello_world.txt
+PS C:\programing\git_challenge> git commit -m "こんにちは、世界！ to hello_world.txt"
+[main 0803033] こんにちは、世界！ to hello_world.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\programing\git_challenge> 
+ *  履歴が復元されました 
+
+PS C:\Users\surug> cd.. C:\programing
+PS C:\Users> cd C:\programing
+PS C:\programing> cd git_challenge
+PS C:\programing\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\programing\git_challenge> git log -- hello_world.txt
+commit 08030334946e1595b12800d89b34c014e25447cf (HEAD -> main)
+Author: AMK-800 <surugadouhu800@gmail.com>
+Date:   Mon Nov 18 21:17:41 2024 +0900
+
+    こんにちは、世界！ to hello_world.txt
+
+commit a466d5caf21a0193d04131737db066f18c8c466d
+Author: AMK-800 <surugadouhu800@gmail.com>
+Date:   Mon Nov 18 21:13:49 2024 +0900
+
+    Hello, world to hello_world.txt
+
+commit d85109902227177db7836992191f9e9ff7064fc4
+Author: AMK-800 <surugadouhu800@gmail.com>
+Date:   Mon Nov 18 20:59:40 2024 +0900
+
+    Hello, world to hello_world.txt
+PS C:\programing\git_challenge> mkdir kadai_005
+
+
+    ディレクトリ: C:\programing\git_challenge
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/11/25     18:07                kadai_005
+
+
+PS C:\programing\git_challenge> cd kadai_005
+PS C:\programing\git_challenge\kadai_005> ni kadai_005.txt
+
+
+    ディレクトリ: C:\programing\git_challenge\kadai_005
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        2024/11/25     18:08              0 kadai_005.txt
+
+
+PS C:\programing\git_challenge\kadai_005>
